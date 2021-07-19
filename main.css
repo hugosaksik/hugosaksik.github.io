@@ -1,0 +1,61 @@
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface:300,400,500';
+
+
+body {
+    padding-top: 30vh;  
+    background-color: #fefefe;
+   }
+   
+   .ph {
+    height: 120px;  
+    overflow: hidden;
+    position: relative;
+   }
+   
+   .ph h3 {
+    font-size: 5em;
+    color: #6855d4;
+    font-family: "Abril Fatface","Helvetica", "Arial", sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 100%;
+    white-space: nowrap;
+
+
+    text-align: center;
+
+
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);  
+    transform:translateX(100%);
+    /* Apply animation to this element */  
+    -moz-animation: demo-1 15s linear infinite;
+    -webkit-animation: demo-1 15s linear infinite;
+    animation: demo-1 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes demo-1 {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes demo-1 {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes demo-1 {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);     
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+   
+   
