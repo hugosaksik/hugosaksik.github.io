@@ -1,19 +1,122 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Hugo Saksik</title>
-  <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="main.css">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/gif" href="data/logo.gif">
+
 </head>
 
-
 <body>
-    <div class="ph">
 
-        <h3>Building website, come back later ...</h3>
+  <!-- text animations -->
+  <!-- <script src="textAnimation.js"></script> -->
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="logo_container">
+    <img class="logo" src="data/logo.gif">
+  </div>
+
+  <div class="container_side">
+
+    <div class="container" id="home_container"">
+
+      <div class=" row">
+      <div class="six columns">
+        <a href="leparc.html"><img src="data/previewImages/julio.jpg" class="u-max-full-width">
+        </a>
+        <p class="proj_description">Systématiser, part 1</p>
+      </div>
+
+      <div class="six columns">
+        <a href="molnar.html"> <img src="data/previewImages/vera.jpg" class="u-max-full-width">
+        </a>
+        <p class="proj_description">Systématiser, part 2</p>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="six columns">
+        <a href="memoire.html"><img src="data/previewImages/memoire.png" class="u-max-full-width">
+        </a>
+        <p class="proj_description">La simplicité et l'écran</p>
+      </div>
+
+      <div class="six columns">
+        <a href="forez.html"><img src="data/previewImages/forez2.jpg" class="u-max-full-width">
+        </a>
+        <p class="proj_description">Forez en couleur</p>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+
+      <div class="six columns">
+        <a href="artDirectory.html"><img src="data/previewImages/artDirectory.jpg" class="u-max-full-width">
+        </a>
+        <p class="proj_description">Art directory</p>
+      </div>
+      <div class="six columns">
+        <img src="data/previewImages/more.jpg" class="u-max-full-width">
+        <p class="proj_description">more content soon</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="sidebar">
+    <h3 class="info_txt" onclick="showText('about_text')">About me</h3>
+    <p class="bar_text" id="about_text">My name is Hugo Saksik. I'm a post-graduate student at the ESADSE in media
+      design. I'm mostly interested in generative programming, and ethics in the digital design industry.</p>
+    <h3 class="info_txt">Contact</h3>
+    <p class="bar_text" id="contact_text"><a href="mailto:contact@hugos.anonaddy.com" class="proj_link">Send me an
+        email</a>, or <span id="click" class="proj_link">copy my email</span><br><a href="https://www.linkedin.com/in/hugo-saksik-93395715b/" class="proj_link"
+        target="_blank">Linkedin</a><br><a href="https://github.com/notaparrot" class="proj_link"
+        target="_blank">Github</a></p>
+    <h3 class="info_txt">On this website</h3>
+    <p class="bar_text" id="website_text">I wrote this website with <a href="http://getskeleton.com/" target="_blank"
+        class="proj_link">skeleton</a>. The fonts in use are
+      <a class="proj_link" href="https://velvetyne.fr/fonts/fengardo-neue/" target="_blank">Fengardo Neue by Loïc
+        Sander</a>, <a href="https://www.velvetyne.fr/fonts/lack/" class="proj_link" target="_blank">Lack by Adrien
+        Midzic</a> and <a href="https://www.velvetyne.fr/fonts/avara/"class="proj_link" target="_blank">Avara by Raphaël Bastide</a>.</p>
+  </div>
+
+  <script>
+     document.getElementById("click").addEventListener("click", function(){
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText("contact@hugos.anonaddy.com");
+
+  document.getElementById("click").innerHTML = "copied !";
+
+  /* Alert the copied text */
+  // alert("Copied the text: " + "my email adress");
+
+ });
+  </script>
 </body>
 
 </html>
