@@ -34,7 +34,7 @@ body {
     top: 200px;
     right: 2em;
     overflow-x: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     bottom: 0;
     /* Disable horizontal scroll */
     /* padding-top: 20px; */
