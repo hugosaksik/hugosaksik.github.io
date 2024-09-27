@@ -1,97 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>La simplicité et l'écran</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="description" content="Hugo Saksik's master thesis researching the origins and ideology of simplicity in UI design.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/custom.css">
-
-    <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/gif" href="data/logo.gif">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 
 <body>
 
-    <!-- test
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="content">
 
-
-    <div class="container">
-
-        <div class="row">
-            <div class="eleven columns">
-                <h3 class="page_titre">La simplicité et l'écran</h3>
-                <h3 class="page_sous_titre">Master thesis</h3>
+        <div class="text">
+            <div class="project-title-container">
+                <h1 class="project-title">La simplicité et l'écran</h1>
             </div>
-            <div class="one column">
-                <a href="index.html"> <img src="data/home.svg" class="home_button"> </a>
+            <p>
+                La simplicité et l'écran is a master thesis written during my studies at the ESADSE. It outlines the
+                original intentions that motivated the conception of the first digital graphical user interfaces and
+                questions how simplicity became the dominant paradigm of contemporary user interface design. Based
+                on
+                the theories by Lev Manovich, Matthew Fuller and Anthony Masure, the non-desirable effects of this
+                design philosophy are reflected upon.
+                <br>
+                With the desire to join the ideas I develop in this essay and my design practice, the layout of this
+                thesis was realised using web to print and with the precious help of the paged.js library. The
+                source
+                code of the layout is open and released under the AGPL-3.0 License on my github account.
+                <br>
+                The cover pattern hinting at a terminal of a phosphor monitor was coded with Processing. Each
+                printed
+                book displays a unique laser-cut cover as the pattern is being generated in a procedural way.
+
+            </p>
+        </div>
+        <div class="right" id="right-splash">
+            <div class="splash img-container">
+                <img src="data/memoire/memoire3.jpg" alt=""/>
             </div>
         </div>
-        <div class="row">
-            <div class="six columns">
-                <img src="data/memoire/1.jpg" class="u-max-full-width page_image">
-            </div>
-            <div class="six columns">
-                <p class="page_text">La simplicité et l'écran is a master thesis written during my studies at the
-                    ESADSE. It outlines the original intentions that motivated the conception of the first digital
-                    graphical user interfaces and questions how simplicity became the dominant paradigm of contemporary
-                    user interface design. Based on the theories by Lev Manovich, Matthew Fuller and
-                    Anthony Masure, the non-desirable effects of this design philosophy are reflected upon.</p>
-                <p class="page_text">With the desire to join the ideas I develop in this essay and my design
-                    practice, the layout of this thesis was realised using web to print and with the precious
-                    help of the paged.js library. The source code of the layout is open and released under the AGPL-3.0
-                    License on <a href="https://github.com/notaparrot/memoire" class="proj_link" target="_blank">my
-                        github account</a>.</p>
-                <p class="page_text">The cover pattern hinting at a terminal of a <a
-                        href="https://en.wikipedia.org/wiki/Phosphor#/media/File:IBM_PC_5150.jpg" class="proj_link"
-                        target="_blank">phosphor
-                        monitor</a> was coded with Processing. Each printed book displays a unique laser-cut cover as the pattern is being generated in a procedural way.</p>
-            </div>
-        </div>
+        <div class="more-pictures right">
+            <div class="img-container" id="memoire2">
+                <img src="data/memoire/memoire5.jpg" alt=""/>
 
-        <div class="row">
-            <div class="six columns">
-                <img src="data/memoire/3.jpg" class="u-max-full-width page_image">
             </div>
-            <div class="six columns">
-                <img src="data/memoire/5.jpg" class="u-max-full-width page_image">
+
+            <!-- <div class="img-container" id="memoire3">
+                <img src="data/memoire/memoire2.jpg" alt=""/>
+            </div> -->
+
+            <div class="img-container" id="memoire4">
+                <img src="data/memoire/memoire4.jpg" alt=""/>
+            </div>
+
+            <div class="img-container" id="memoire5">
+                <img src="data/memoire/memoire6.jpg" alt=""/>
+            </div>
+
+            <div class="img-container" id="memoire6">
+                <img src="data/memoire/memoire1.jpg" alt=""/>
+
             </div>
 
         </div>
-        <div class="row">
-            <div class="six columns">
-                <img src="data/memoire/6.jpg" class="u-max-full-width page_image">
-            </div>
-            <div class="six columns">
-
-                <img src="data/memoire/7.jpg" class="u-max-full-width page_image">
-            </div>
-        </div>
-        <div class="row">
-            <div class="twelve columns">
-                <img src="data/memoire/4.jpg" class="u-max-full-width page_image">
-            </div>
-        </div>
-
     </div>
 
+    <script src="./topbar.js"></script>
+    <script src="./imagePreview.js"></script>
 </body>
 
 </html>

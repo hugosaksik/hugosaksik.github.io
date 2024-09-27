@@ -1,0 +1,11 @@
+
+#circle-container {
+    position: absolute;
+    pointer-events: none; /* Prevent the container from blocking mouse events */
+}
+
+.circle-text {
+    position: absolute;
+    transform-origin: center;
+}
+

@@ -1,0 +1,372 @@
+@font-face {
+    font-family: Syne;
+    src: url('./fonts/Syne-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: General-sans;
+    src: url('./fonts/GeneralSans-Variable.ttf');
+}
+
+:root {
+    --about-left-margin: 40vw;
+    --topbar-horizontal-padding: 4vw;
+    --splash-bottom-margin: 10vh;
+    --bg-color: #F3EFEE;
+    --txt-color: black;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "General-sans";
+    margin: 0px;
+    color: var(--txt-color);
+}
+
+a {
+    color: var(--txt-color);
+}
+
+p a:hover {
+    color: var(--bg-color);
+    background-color: var(--txt-color);
+}
+
+p {
+    margin: 0px;
+    font-weight: 300;
+}
+
+/* TOP BAR */
+/* ------------------------------------------------------------------- */
+
+.top-bar {
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    right: 0vw;
+    background-color: var(--bg-color);
+    z-index: 100;
+    padding: 2vh var(--topbar-horizontal-padding);
+}
+
+.top-bar-item {
+    font-family: "Syne";
+    cursor: pointer;
+    font-size: 16pt;
+}
+
+#name {
+    position: fixed;
+    text-decoration: none;
+}
+
+#about {
+    display: none;
+}
+
+#projects {
+    display: none;
+}
+
+#more {
+    float: right;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    .top-bar {
+        padding: 4vh var(--topbar-horizontal-padding);
+    }
+
+    #projects {
+        float: right;
+        display: block;
+    }
+
+    #about {
+        position: fixed;
+        margin-left: var(--about-left-margin);
+        text-decoration: none;
+        display: block;
+    }
+
+    #more {
+        display: none;
+    }
+}
+
+/* drop-down menu - projects */
+/* ------------------------------------------------------------------- */
+
+.dropdown-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    visibility: hidden;
+    justify-content: left;
+    z-index: -1;
+    opacity: 0;
+    flex-direction: column;
+    padding: 25vh var(--topbar-horizontal-padding) 2vh var(--topbar-horizontal-padding);
+    transition: visibility 0.5s, opacity 0.5s;
+}
+
+#menu-toggle:checked~#dropdown {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0.5s, opacity 0.5s;
+}
+
+#menu-toggle:checked~#projects {
+    text-decoration: underline;
+}
+
+#menu-toggle:checked~#more {
+    text-decoration: underline;
+}
+
+#more-arrow {
+    transition: transform 0.5s;
+    float: right;
+    margin-right: 3px;
+}
+
+#menu-toggle:checked~#more-arrow {
+    text-decoration: none;
+    transform: rotate(180deg);
+}
+
+.dropdown-menu .project-entry {
+    border-bottom: 1px solid var(--txt-color);
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    text-decoration: none;
+}
+
+.dropdown-menu .project-entry:hover {
+    background-color: var(--txt-color);
+    color: var(--bg-color);
+    border-bottom: 1px solid var(--txt-color);
+    cursor: none;
+}
+
+.dropdown-menu .project-name {
+    font-weight: 500;
+    flex-grow: 2;
+}
+
+.dropdown-menu span {
+    flex: 1;
+}
+
+.dropdown-menu .year {
+    text-align: right;
+}
+
+.dropdown-menu .description {
+    position: fixed;
+    margin-left: var(--about-left-margin);
+}
+
+.getintouch-container {
+    margin-top: auto;
+    width: 100%;
+    font-weight: 500;
+    border-bottom: 1px solid var(--txt-color);
+    padding-bottom: 5px;
+}
+
+.getintouch-container a {
+    text-decoration: none;
+    float: right;
+    font-size: 14pt;
+}
+
+#preview-image {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: none;
+    pointer-events: none;
+    border-radius: 50%;
+    border: 1px solid var(--txt-color);
+    z-index: 10;
+}
+
+.description {
+    display: none;
+}
+
+#mobile-about {
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .description {
+        display: block;
+    }
+
+    #mobile-about {
+        display: none;
+    }
+
+}
+
+/* Layout - general */
+/* ------------------------------------------------------------------- */
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7vh;
+}
+
+@media only screen and (min-width: 1000px) {
+    .content {
+        display: block;
+        padding-top: 0;
+    }
+}
+
+/* Text - left */
+/* ------------------------------------------------------------------- */
+
+.project-title {
+    margin: 0;
+    font-weight: 500;
+}
+
+.project-title-container {
+    height: calc(100vh - calc(75vh + 7vh));
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    max-width: 100%;
+    max-height: 79vh;
+    object-fit: cover;
+}
+
+.text {
+    padding-left: var(--topbar-horizontal-padding);
+    padding-right: var(--topbar-horizontal-padding);
+    margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+    .text {
+        margin-left: var(--topbar-horizontal-padding);
+        position: fixed;
+        max-width: calc(var(--about-left-margin) - 50px);
+        bottom: var(--splash-bottom-margin);
+        padding: 0rem;
+        margin-bottom: 0;
+        /* not super happy with this but prevent an ugly text overflow */
+        max-height: 79vh;
+        overflow: scroll;
+    }
+
+    .text p {
+        text-align: justify;
+    }
+
+    .project-title-container {
+        height: initial;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Images - right */
+/* ------------------------------------------------------------------- */
+
+#right-splash {
+    order: -1;
+}
+
+.splash {
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.more-pictures {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.more-pictures .img-container {
+    overflow: hidden;
+}
+
+.splash img {
+    object-fit: cover;
+    max-width: 100vw;
+    height: 75vh;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    .right {
+        overflow-x: hidden;
+        width: calc(100% - calc(var(--topbar-horizontal-padding) + var(--about-left-margin)));
+        float: right;
+    }
+
+    .splash {
+        height: 100vh;
+        align-items: flex-end;
+        /* justify-content: end; */
+    }
+
+    .splash img {
+        margin-bottom: var(--splash-bottom-margin);
+    }
+
+    .content img {
+        max-width: none;
+    }
+
+    .more-pictures {
+        gap: 50px;
+        margin-bottom: 50px;
+
+    }
+}

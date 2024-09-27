@@ -1,0 +1,116 @@
+#about {
+    text-decoration: underline;
+}
+
+.about-container {
+    padding-top: 7vh;
+    padding-left: var(--topbar-horizontal-padding);
+    padding-right: var(--topbar-horizontal-padding);
+}
+
+.about-container .contact-container {
+    width: 400px;
+}
+
+.portrait {
+    width: 250px;
+    height: auto;
+}
+
+#portrait-mobile {
+    margin: 20px auto 0 auto;
+}
+
+#portrait-desktop {
+    display: none;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-left {
+    position: relative;
+    display: flex;
+  flex-direction: column;
+}
+
+.about-right p {
+    margin-left: 20px;
+}
+
+.about-right h3 {
+    font-weight: 500;
+}
+
+.getintouch {
+    margin-top: 50px;
+    width: 70%;
+}
+
+.portrait-background {
+    display: none;
+    margin: auto 0;
+}
+
+.about-master-container .getintouch-container {
+    width: calc(100% - calc(var(--topbar-horizontal-padding) * 2));
+    margin: 0 auto;
+    height: 50px;
+    border: none;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .about-container {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+        height: 100vh;
+        margin: 0px;
+        padding: 10% 7vw;
+        box-sizing: border-box;
+    }
+
+    .portrait-background {
+        width: 380px;
+        height: 500px;
+        overflow: hidden;
+        object-fit: cover;
+        display: block;
+    }
+
+    #portrait-mobile {
+        display: none;
+    }
+
+    #portrait-desktop {
+        display: block;
+        position: absolute;
+        right: -0%;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        object-fit: cover;
+    }
+
+    .about-master-container .getintouch-container {
+        position: absolute;
+        bottom: 2vh;
+        border-bottom: 1px solid var(--txt-color);
+    }
+
+    .about-master-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .about-container {
+        gap: 10vw;
+        padding: 10% 13vw;
+    }
+}

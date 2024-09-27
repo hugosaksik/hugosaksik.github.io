@@ -2,120 +2,28 @@
 <html lang="en">
 
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Hugo Saksik</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/gif" href="data/logo.gif">
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hugo Saksik</title>
+    <meta name="description" content="Hi I'm Hugo, a creative technologist exploring code and design to craft memorable experiences.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <style>
+        #name{
+            text-decoration: underline;
+        }
+    </style>
 
-  <!-- text animations -->
-  <!-- <script src="textAnimation.js"></script> -->
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="logo_container">
-    <img class="logo" src="data/logo.gif">
-  </div>
-
-  <div class="container_side">
-
-    <div class="container" id="home_container"">
-
-      <div class=" row">
-      <div class="six columns">
-        <a href="leparc.html"><img src="data/previewImages/julio.jpg" class="u-max-full-width">
-        </a>
-        <p class="proj_description">Systématiser, part 1</p>
-      </div>
-
-      <div class="six columns">
-        <a href="molnar.html"> <img src="data/previewImages/vera.jpg" class="u-max-full-width">
-        </a>
-        <p class="proj_description">Systématiser, part 2</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="six columns">
-        <a href="memoire.html"><img src="data/previewImages/memoire.png" class="u-max-full-width">
-        </a>
-        <p class="proj_description">La simplicité et l'écran</p>
-      </div>
-
-      <div class="six columns">
-        <a href="dtcc.html"><img src="data/previewImages/dtcc.jpg" class="u-max-full-width">
-        </a>
-        <p class="proj_description">Graphic Jam</p>
-      </div>
-
-
-    </div>
-
-    <div class="row">
-
-      <div class="six columns">
-        <a href="forez.html"><img src="data/previewImages/forez2.jpg" class="u-max-full-width">
-        </a>
-        <p class="proj_description">Forez en couleur</p>
-      </div>
-
-      <div class="six columns">
-        <a href="artDirectory.html"><img src="data/previewImages/artDirectory.jpg" class="u-max-full-width">
-        </a>
-        <p class="proj_description">Art directory</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="sidebar">
-    <h3 class="info_txt">Hugo Saksik</h3>
-    <p class="bar_text" id="contact_text"><a href="mailto:contact@hugos.anonaddy.com" class="proj_link">Send me an
-        email</a>, or <span id="click" class="proj_link">copy my email</span><br><a
-        href="https://www.linkedin.com/in/hugo-saksik-93395715b/" class="proj_link" target="_blank">Linkedin</a><br><a
-        href="https://github.com/hugosaksik" class="proj_link" target="_blank">Github</a></p>
-    <h3 class="info_txt">About this website</h3>
-    <p class="bar_text" id="website_text">I wrote this website with <a href="http://getskeleton.com/" target="_blank"
-        class="proj_link">skeleton</a>. The fonts in use are
-      <a class="proj_link" href="https://velvetyne.fr/fonts/fengardo-neue/" target="_blank">Fengardo Neue by Loïc
-        Sander</a>, <a href="https://www.velvetyne.fr/fonts/lack/" class="proj_link" target="_blank">Lack by Adrien
-        Midzic</a> and <a href="https://www.velvetyne.fr/fonts/avara/" class="proj_link" target="_blank">Avara by
-        Raphaël Bastide</a>.</p>
-  </div>
-
-  <script>
-    document.getElementById("click").addEventListener("click", function () {
-
-      /* Copy the text inside the text field */
-      navigator.clipboard.writeText("contact@hugos.anonaddy.com");
-
-      document.getElementById("click").innerHTML = "copied !";
-
-      /* Alert the copied text */
-      // alert("Copied the text: " + "my email adress");
-
-    });
-  </script>
+    <script src="./front-page-sketch/script_loader.js"></script>
+    <script src="./topbar.js"></script>
+    <script src="./imagePreview.js" ></script>
+    <script>
+        //quick fix to have topbar transparent
+        var topbar = document.getElementsByClassName("top-bar");
+        if (topbar.length > 0) {
+    topbar[0].style.backgroundColor = "transparent";
+}    </script>
 </body>
-
-</html>
