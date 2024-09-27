@@ -69,7 +69,7 @@
 - Name: Whole Earth Index
 - Description: Nearly-complete archive of Whole Earth publications
 - Tags: Inspiration
-- Link: https://fontsinuse.com/
+- Link: https://wholeearth.info/
 
 - Name: Alliance Graphique Internationale
 - Description: Association of professionals graphic designer 
