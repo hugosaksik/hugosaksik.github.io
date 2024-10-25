@@ -181,6 +181,12 @@ p {
     cursor: none;
 }
 
+.dropdown-menu #links-repo:hover {
+    background-color: #fe3b01 !important;
+    color: var(--bg-color);
+    border-bottom: 1px solid #fe3b01 !important;
+}
+
 .dropdown-menu .project-name {
     font-weight: 500;
     flex-grow: 2;
@@ -214,14 +220,26 @@ p {
 }
 
 #preview-image {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    display: none;
+    /* position: absolute; */
+    width: 0px;
+    height: 0px;
+    /* display: none; */
     pointer-events: none;
     border-radius: 50%;
-    border: 1px solid var(--txt-color);
+    border: 0px solid var(--txt-color);
     z-index: 10;
+    transition: width .2s ease, height .2s ease;
+}
+
+#preview-image-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-75px, 0px);
+    pointer-events: none;
+    width: 150px;
+    height: 150px;
 }
 
 .description {
