@@ -160,6 +160,12 @@ p {
     transform: rotate(180deg);
 }
 
+/* Remove underline from name and about when menu is open */
+#menu-toggle:checked ~ #name,
+#menu-toggle:checked ~ #about {
+    text-decoration: none !important;
+}
+
 .dropdown-menu .project-entry {
     border-bottom: 1px solid var(--txt-color);
     width: 100%;

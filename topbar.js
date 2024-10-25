@@ -3,9 +3,9 @@
 var topbar = document.createElement('div');
 topbar.className = 'top-bar';
 topbar.innerHTML = `
+<input type="checkbox" id="menu-toggle">
         <a id="name" class="top-bar-item noselect" href="./index.html">hugo saksik</a>
         <a id="about" class="top-bar-item noselect" href="./about.html">about</a>
-        <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="top-bar-item menu-button noselect" id="projects">projects</label>
         <label for="menu-toggle" class="top-bar-item menu-button noselect" id="more">more</label>
         <label for="menu-toggle" class="top-bar-item menu-button noselect" id="more-arrow">↘</label> 
