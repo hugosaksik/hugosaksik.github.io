@@ -81,6 +81,11 @@
 - Tags: Typography, Visual reference
 - Link: https://anothergraphic.org/
 
+- Name: Brutalist websites
+- Description: A collection of websites
+- Tags: Web, Visual reference
+- Link: https://anothergraphic.org/
+
 # TOOLS - TOYS
 
 - Name: Tixy Land
@@ -154,3 +159,15 @@
 - Description: A javascript library for web to print
 - Tags: Javascript
 - Link: https://pagedjs.org/
+
+# HARDWARE
+
+- Name: Make it yourself
+- Description: Open-hardware DIY projects
+- Tags: Hardware
+- Link: https://makeityourself.org/
+
+- Name: N-O-D-E zine
+- Description: A zine for hackers/makers packed with open hardware projects
+- Tags: Hardware
+- Link: https://n-o-d-e.net/zine/index.html
