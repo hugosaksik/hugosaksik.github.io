@@ -72,7 +72,7 @@
 
 .about-master-container .getintouch-container {
     width: calc(100% - calc(var(--topbar-horizontal-padding) * 2));
-    margin: 0 auto;
+    margin: 20px auto 20px auto;
     height: 50px;
     border: none;
 }
@@ -84,7 +84,7 @@
         display: flex;
         justify-content: center;
         gap: 5vw;
-        height: 100vh;
+        /* height: 100vh; */
         margin: 0px;
         padding: 10% 7vw;
         box-sizing: border-box;
@@ -117,11 +117,13 @@
         position: absolute;
         bottom: 2vh;
         border-bottom: 1px solid var(--txt-color);
+        
     }
 
     .about-master-container {
         display: flex;
         justify-content: center;
+        position: relative;
     }
 }
 

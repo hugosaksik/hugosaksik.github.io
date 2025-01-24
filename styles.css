@@ -8,6 +8,11 @@
     src: url('./fonts/GeneralSans-Variable.ttf');
 }
 
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url('./fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
 :root {
     --about-left-margin: 40vw;
     --topbar-horizontal-padding: 4vw;
@@ -33,9 +38,11 @@
 
 body {
     background-color: var(--bg-color);
-    font-family: "General-sans";
+    font-family: "Hanken Grotesk";
+    font-size: 14pt;
     margin: 0px;
     color: var(--txt-color);
+    font-weight: 200;
 }
 
 a {
@@ -49,7 +56,7 @@ p a:hover {
 
 p {
     margin: 0px;
-    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 /* TOP BAR */
@@ -68,7 +75,8 @@ p {
 .top-bar-item {
     font-family: "Syne";
     cursor: pointer;
-    font-size: 16pt;
+    font-size: 20pt;
+    /* font-weight: 600; */
 }
 
 #name {
@@ -284,7 +292,8 @@ p {
 /* ------------------------------------------------------------------- */
 
 .project-title {
-    margin: 0;
+    /* margin: 0; */
+    margin: 20px 0 20px 0;
     font-weight: 500;
 }
 
@@ -313,6 +322,7 @@ p {
         max-width: calc(var(--about-left-margin) - 50px);
         bottom: var(--splash-bottom-margin);
         padding: 0rem;
+        padding-right: 2rem;
         margin-bottom: 0;
         /* not super happy with this but prevent an ugly text overflow */
         max-height: 79vh;

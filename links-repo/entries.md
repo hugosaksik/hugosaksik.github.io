@@ -22,7 +22,7 @@
 - Name: Use & Modify
 - Description: A selection of typefaces by Raphaël Bastide
 - Tags: Typography
-- Link: http://phantom-foundry.com/
+- Link: https://usemodify.com/
 
 - Name: Fontshare
 - Description: Free fonts by Indian Type Foundry (ITF)
@@ -84,7 +84,12 @@
 - Name: Brutalist websites
 - Description: A collection of websites
 - Tags: Web, Visual reference
-- Link: https://anothergraphic.org/
+- Link: https://brutalistwebsites.com/
+
+- Name: Illustration.lol
+- Description: A collection of illustrations
+- Tags: Visual reference
+- Link: https://www.illustration.lol/
 
 # TOOLS - TOYS
 
