@@ -5,25 +5,53 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hugo Saksik</title>
-    <meta name="description" content="Hi I'm Hugo, a creative technologist exploring code and design to craft memorable experiences.">
+    <meta name="description"
+        content="Hi I'm Hugo, a creative technologist exploring code and design to craft memorable experiences.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-</head>
 
-<body>
     <style>
-        #name{
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #backgroundSketch
+  {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #foregroundSketch {
+            position: absolute;
+            top: 15vh;
+            left: 0;
+        }
+
+
+    </style>
+
+    <style>
+        #name {
             text-decoration: underline;
         }
     </style>
+</head>
+
+<body>
+
+
+    <div id="backgroundSketch"></div>
+    <div id="foregroundSketch"></div>
 
     <script src="./front-page-sketch/script_loader.js"></script>
     <script src="./topbar.js"></script>
-    <script src="./imagePreview.js" ></script>
+    <script src="./imagePreview.js"></script>
     <script>
         //quick fix to have topbar transparent
         var topbar = document.getElementsByClassName("top-bar");
         if (topbar.length > 0) {
-    topbar[0].style.backgroundColor = "transparent";
-}    </script>
+            topbar[0].style.backgroundColor = "transparent";
+        }    </script>
 </body>
