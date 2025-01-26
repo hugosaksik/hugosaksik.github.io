@@ -326,7 +326,7 @@ p {
         margin-bottom: 0;
         /* not super happy with this but prevent an ugly text overflow */
         max-height: 79vh;
-        overflow: scroll;
+        overflow: auto;
     }
 
     .text p {
