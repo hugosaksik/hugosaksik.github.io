@@ -13,7 +13,7 @@ topbar.innerHTML = `
         <div id="dropdown" class="dropdown-menu">
 
         
-        <a class="project-entry" id="links-repo" href="./links-repo/index.html" data-image="./data/preview/pre-linkrepo.jpg">
+        <a class="project-entry" id="links-repo" href="./linksrepo.html" data-image="./data/preview/pre-linkrepo.jpg">
         <span class="project-name">Links repo</span><span class="description">tools - typography - inspiration</span><span class="year">ongoing</span></a>
         <a class="project-entry" href="./graphicjam.html" data-image="./data/preview/pre-graphicjam.jpg"><span class="project-name">Graphic Jam</span><span class="description">creative coding - graphic design</span><span class="year">2022</span></a>
         <a class="project-entry" href="./leparc.html" data-image="./data/preview/pre-leparc.jpg"><span class="project-name">Systématiser - Julio Leparc</span><span class="description">immersive installation</span><span class="year">2021</span></a>
