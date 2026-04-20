@@ -91,6 +91,41 @@
 - Tags: Visual reference
 - Link: https://www.illustration.lol/
 
+- Name: Divisare
+- Description: An architectural database
+- Tags: Visual reference, Architecture
+- Link: https://divisare.com/
+
+- Name: Frameset
+- Description: Nice video shots
+- Tags: Visual reference, Filmmaking
+- Link: https://frameset.app/search
+
+- Name: Art of the title
+- Description: A collection of title sequence 
+- Tags: Visual reference, Filmmaking
+- Link: https://www.artofthetitle.com/titles/
+
+- Name: Good moves
+- Description: La crème de la crème of motion design
+- Tags: Visual reference, Filmmaking
+- Link: https://goodmoves.tv/
+
+- Name: Soot world
+- Description: A strange world of interconnected images
+- Tags: Visual reference
+- Link: https://play.soot.com/
+
+- Name: 128kb
+- Description: Bite-sized creative coding
+- Tags: Visual reference, Creative coding
+- Link: https://128kb.eu/
+
+- Name: Architextures
+- Description: A collection of textures for architectural purpose
+- Tags: Visual reference, Architecture
+- Link: https://architextures.org/
+
 # TOOLS - TOYS
 
 - Name: Tixy Land
