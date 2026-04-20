@@ -211,3 +211,8 @@
 - Description: A zine for hackers/makers packed with open hardware projects
 - Tags: Hardware
 - Link: https://n-o-d-e.net/zine/index.html
+
+- Name: DIYR
+- Description: Beautiful open-hardware furnitures
+- Tags: Hardware
+- Link: https://diyr.dev/
